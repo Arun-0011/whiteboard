@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:background="@drawable/background_card"
+        android:paddingStart="@dimen/dimen_16dp"
+        android:paddingEnd="@dimen/dimen_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_pencil"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:background="@null"
+            android:src="@drawable/ic_unselected_pencil" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_arrow"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toEndOf="@id/btn_pencil"
+            android:background="@null"
+            android:src="@drawable/ic_unselected_line" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_rectangle"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toEndOf="@id/btn_arrow"
+            android:background="@null"
+            android:src="@drawable/ic_unselected_rectangle" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_ellipse"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toEndOf="@id/btn_rectangle"
+            android:background="@null"
+            android:src="@drawable/ic_unselected_circle" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_pallete"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toEndOf="@id/btn_ellipse"
+            android:background="@null"
+            android:src="@drawable/ic_unselected_palette" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/color_palate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/background_card"
+        app:layout_constraintEnd_toEndOf="@id/action"
+        app:layout_constraintTop_toBottomOf="@id/action">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_blue"
+            android:layout_width="@dimen/dimen_26dp"
+            android:layout_height="@dimen/dimen_26dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:background="@drawable/color_palette_google_blue" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_red"
+            android:layout_width="@dimen/dimen_26dp"
+            android:layout_height="@dimen/dimen_26dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toEndOf="@id/btn_blue"
+            android:background="@drawable/color_palette_google_red" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_green"
+            android:layout_width="@dimen/dimen_26dp"
+            android:layout_height="@dimen/dimen_26dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toEndOf="@id/btn_red"
+            android:background="@drawable/color_palette_google_green" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_yellow"
+            android:layout_width="@dimen/dimen_26dp"
+            android:layout_height="@dimen/dimen_26dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toEndOf="@id/btn_green"
+            android:background="@drawable/color_palette_google_yellow" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_black"
+            android:layout_width="@dimen/dimen_26dp"
+            android:layout_height="@dimen/dimen_26dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_toEndOf="@id/btn_yellow"
+            android:background="@drawable/color_palette_black" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
